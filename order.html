@@ -2,7 +2,10 @@
 
 <head>
     <title> SkyBakery </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 </head>
@@ -33,10 +36,13 @@
         <a href="https://steamcommunity.com/id/steamwarspear/"><i class="fa fa-steam-square" aria-hidden="true"></i></a>
 
     </p>
-    <header>
-        <ul class="nav justify-content-left">
+
+    <input type="checkbox" id="check" class="btn-check">
+
+    <div class="samping">
+        <ul>
             <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
@@ -51,6 +57,32 @@
                 <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
         </ul>
+        </input>
+    </div>
+    <header>
+        <div class="head">
+            <ul class="nav justify-content-left">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="order.html">How to Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <label for="check" class="kecil"><i class="fas fa-bars fa-2x"></i></label>
+
+
+
     </header>
     <section class="contact">
         <div class="po">
@@ -73,20 +105,21 @@
                     </br>
                 </div>
                 <div class="order">
+
                     <h3 class="center">Product</h3>
                     </br>
 
                     <select id="mySelect" onchange="myFunction()">
-            <option selected>Product</option>
-            <option value=20000>Toast Bread</option>
-            <option value="25000">Callah Bread</option>
-            <option value="10000">Croissant</option>
-            <option value="12000">Pretzel Buns</option>
-            <option value="26000">Banana Bread</option>
-            <option value="8000">Donut</option>
-            <option value="10000">Cupcake</option>
-            <option value="12000">Sosis Bread</option>
-            </select>
+                     <option selected>Product</option>
+                     <option value=20000>Toast Bread</option>
+                     <option value="25000">Callah Bread</option>
+                      <option value="10000">Croissant</option>
+                      <option value="12000">Pretzel Buns</option>
+                      <option value="26000">Banana Bread</option>
+                     <option value="8000">Donut</option>
+                    <option value="10000">Cupcake</option>
+                      <option value="12000">Sosis Bread</option>
+                     </select>
                     </br>
                     <p id="harga"></p>
 
@@ -102,21 +135,22 @@
                     </br>
 
                     <p>Pilih Metode Pembayaran : </p>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Shopee Pay</label>
+                    <div class="cek">
+                        <div class="form-check form-check-inline">
+                            <input class="formc" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Dana</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="formc" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Ovo</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="formc" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">Gopay  </label>
+                        </div>
+                        </br>
+                        </br>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Ovo</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                        <label class="form-check-label" for="inlineRadio3">Virtual Account</label>
-                    </div>
-                    </br>
-                    </br>
-
                     <p class="right">
                         <a href="#" class="btn btn-primary">Submit</a>
                     </p>
