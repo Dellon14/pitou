@@ -184,6 +184,92 @@ section {
     height: 28px;
 }
 
-
+.head {
+    width: 90%;
+    margin: 0 auto;
 }
+
+.kecil {
+    float: right;
+    display: none;
+    padding: 20px;
+}
+
+.kecil2 {
+    float: right;
+    display: none;
+    padding: 20px;
+}
+
+x#check {
+    display: none;
+}
+
+.samping {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    transition: 0.35s;
+}
+
+.samping ul li {
+    padding: 24px;
+    border: 2px solid;
+    transition: .35s;
+    transition-property: background-color;
+    list-style: none;
+}
+
+.samping ul li:hover {
+    background-color: lightblue;
+}
+
+#check:checked~.samping {
+    left: 0;
+}
+
+@media (max-width: 1200px) {
+    .po {
+        margin: auto;
+        width: auto;
+    }
+    .order {
+        display: block;
+        float: inherit;
+    }
+    .kecil {
+        display: inline-block;
+        float: right;
+    }
+    .head {
+        display: none;
+        margin: auto;
+    }
+    .card {
+        width: auto;
+    }
+}
+
+@media (max-width: 1012px) {
+    .message {
+        display: block;
+        width: 70%;
+        float: inherit;
+        justify-content: center;
+    }
+    .info {
+        float: inherit;
+    }
+    .head2 {
+        display: none;
+        margin: auto;
+    }
+    .kecil2 {
+        display: inline-block;
+        float: right;
+    }
+}
+
 </style>
